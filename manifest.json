@@ -1,0 +1,17 @@
+{
+	"name": "IG downloader",
+	"description": "Download photo from instagram",
+	"version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["declarativeContent", "activeTab", "tabs", "downloads", "scripting", "storage", "contextMenus"],
+    "background": {
+    	"service_worker": "background.js",
+        "type": "module"
+    },
+    "action": {
+		"default_icon": "ig-icon.png",
+		"default_popup": "popup.html"
+	},
+    
+    "host_permissions": ["*://*/*", "file:///*"]
+}
